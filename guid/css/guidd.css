@@ -1,0 +1,128 @@
+.cla_one, .morebx_top, .right_magu, .right_magua, .guma_top ul {
+  font-size: 12px; }
+
+.cla_two, .gu_ma_left, .gu_ma_right {
+  border: 1px solid lightgray;
+  border-radius: 4px; }
+
+.cla_three, .top_fir, .top_thir, .top_for, .top_fiv {
+  font-size: 14px; }
+
+#head {
+  border-bottom: 1px solid lightgray; }
+
+#morebx {
+  width: 100%;
+  height: 5000px;
+  background-color: #F7F7F7; }
+
+.morebx_top {
+  width: 1100px;
+  height: 50px;
+  margin: auto;
+  line-height: 50px;
+  color: #A49FA3; }
+
+.mor_main {
+  width: 1100px;
+  height: 4920px;
+  margin: auto; }
+
+.mor_main ul {
+  display: flex;
+  justify-content: space-around; }
+
+.gu_ma_left {
+  width: 702px;
+  height: 4920px;
+  background-color: #ffffff; }
+
+.gu_ma_right {
+  width: 276px;
+  height: 110px;
+  background-color: #ffffff; }
+
+.right_magu {
+  width: 138px;
+  height: 110px;
+  border-right: 1px solid #A49FA3;
+  text-align: center;
+  float: left;
+  color: #A49FA3; }
+
+.right_magua {
+  width: 136px;
+  height: 110px;
+  text-align: center;
+  color: #A49FA3;
+  float: right; }
+
+.guma_top {
+  width: 661px;
+  height: 100px;
+  margin: auto;
+  line-height: 60px; }
+
+.guma_top ul {
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  line-height: 40px;
+  color: #A49FA3; }
+
+.top_fir {
+  width: 675px;
+  height: 65px;
+  margin: auto;
+  line-height: 30px; }
+
+.top_sec {
+  text-align: center; }
+
+.top_thir {
+  width: 640px;
+  height: 1061px;
+  margin: auto;
+  line-height: 22px; }
+
+.thir_tops {
+  text-align: center;
+  font-weight: 600;
+  line-height: 30px;
+  font-size: 16px; }
+
+.top_thir img {
+  margin-top: 22px; }
+
+#span_di {
+  margin-top: 20px; }
+
+.top_for {
+  width: 640px;
+  height: 1720px;
+  margin: auto;
+  line-height: 22px; }
+
+.top_for img {
+  margin-top: 16px; }
+
+.top_fiv {
+  width: 640px;
+  height: 1455px;
+  margin: auto;
+  line-height: 22px; }
+
+.top_fiv img {
+  margin-top: 16px; }
+
+.top_last {
+  width: 640px;
+  height: 100px;
+  margin: auto;
+  line-height: 40px; }
+
+.top_last a {
+  font-size: 14px;
+  color: #A49FA3; }
+
+/*# sourceMappingURL=guidd.css.map */

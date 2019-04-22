@@ -1,0 +1,41 @@
+.cla_one {
+  font-size: 12px; }
+
+.cla_two {
+  border: 1px solid lightgray;
+  border-radius: 4px; }
+
+.cla_three {
+  font-size: 14px; }
+
+/**/
+#head {
+  border-bottom: 1px solid lightgray; }
+
+#mianfei_sy {
+  width: 100%;
+  height: 100%; }
+
+.bot_one_bo {
+  width: 200px;
+  margin: auto;
+  text-align: center; }
+
+.shi_ul {
+  width: 680px;
+  height: 50px;
+  margin: auto;
+  line-height: 50px;
+  text-align: center; }
+
+.shi_ul ul {
+  display: flex;
+  justify-content: space-between; }
+
+.shi_ul ul li {
+  width: 140px; }
+
+.shi_ul li a {
+  color: #A49FA3; }
+
+/*# sourceMappingURL=mianfei_sy.css.map */

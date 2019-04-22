@@ -1,0 +1,169 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+a {
+	text-decoration: none;
+}
+ul li {
+	list-style: none;
+}
+/*全局*/
+#bigbox {
+	width: 100%;
+	height: 100%;
+}
+/*头部*/
+#head {
+	width: 100%;
+	height: 75px;
+}
+#head_top {
+	width: 1200px;
+	height: 75px;
+	/*border: 1px solid red;*/
+	margin: auto;
+}
+.head_top_logo {
+	width: 145px;
+	height: 75px;
+	float: left;
+}
+.head_top_main {
+	line-height: 75px;
+	width: 402px;
+	height: 75px;
+	/*border: 1px solid red;*/
+	float: left;
+	margin-left: 100px;
+}
+.head_top_main ul {
+	display: flex;
+	justify-content: space-between;
+}
+.head_top_main a {
+	color: #312634;
+}
+.head_top_main a:hover {
+	color: #ec4c3e;
+}
+.head_top_right {
+	width: 330px;
+	height: 75px;
+	/*border: 1px solid red;*/
+	float: right;
+}
+.head_top_right ul {
+	display: flex;
+	justify-content: space-around;
+}
+.register {
+	width: 52px;
+	height: 30px;
+	border: 1px solid #ec4c3e;
+	margin-top: 22px;
+	line-height: 30px;
+	text-align: center;
+}
+.register a {
+	color: #ec4c3e;
+}
+.head_top_right li input {
+	margin-top: 22px;
+	height: 30px;
+	font-size: 18px;
+	display: none;
+}
+/*尾部*/
+#foot{
+	width: 100%;
+	height: 360px;
+	background-color: #505050;
+}
+.fot{
+	width: 1100px;
+	height: 360px;
+	margin: auto;
+	border: 1px solid #505050;
+}
+.fot ul{
+	margin-top: 40px;
+	display: flex;
+	justify-content: space-between;
+}
+.sec{
+	width: 138px;
+	height: 170px;
+/*	border: 1px solid red;*/
+	color: #9d9aad;
+	font-size: 14px;
+}
+.thir{
+	width: 96px;
+	height: 84px;
+/*	border: 1px solid red;*/
+	font-size: 16px;
+	color: white;
+	font-weight: bold;
+}
+.thir table{
+	margin-top: 20px;
+}
+.thir table tr td a{
+	font-size: 12px;
+	color: #9d9aad;
+}
+.for{
+	width: 142px;
+	height: 207px;
+	/*border: 1px solid red;*/
+	font-size: 16px;
+	color: white;
+	font-weight: bold;
+}
+.for table{
+	margin-top: 20px;
+}
+.for table tr td a{
+	font-size: 12px;
+	color: #9d9aad;
+}
+.fiv{
+	width: 152px;
+	height: 150px;
+	/*border: 1px solid red;*/
+	font-size: 16px;
+	color: white;
+	font-weight: bold;
+}
+.fiv table{
+	margin-top: 20px;
+}
+.fiv table tr td a{
+	font-size: 12px;
+	color: #9d9aad;
+}
+.six{
+	width: 175px;
+	height: 125px;
+	/*border: 1px solid red;*/
+	font-size: 16px;
+	color: white;
+	font-weight: bold;
+}
+.six table{
+	margin-top: 20px;
+}
+.six table tr td a{
+	font-size: 12px;
+	color: #9d9aad;
+}
+#to{
+	position: absolute;
+	right: 10%;
+	margin-top: -250px;
+}
+/**/
+#dis_mis{
+	display: none;
+}

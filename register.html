@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>欢迎注册极果</title>
+		<link rel="stylesheet" type="text/css" href="css/headandfoot.css"/>
+		<link rel="stylesheet" type="text/css" href="css/register.css"/>
+		<script type="text/javascript" src="js/jquery-1.12.4.js" ></script>
+	</head>
+	<body>
+		<div id="box">
+			
+			<header id="head">
+				<div id="head_top">
+					<div class="head_top_logo">
+						<img src="img/index/index_02.png" />
+					</div>
+					<div class="head_top_main">
+						<ul>
+							<li>
+								<a href="index.html">首页</a>
+							</li>
+							<li>
+								<a href="play/play_new.html">酷玩</a>
+							</li>
+							<li>
+								<a href="guid/guid.html">导购</a>
+							</li>
+							<li>
+								<a href="use/mianfei_sy.html">试用</a>
+							</li>
+							<li>
+								<a href="report/report_new.html">报告</a>
+							</li>
+						</ul>
+					</div>
+					<div class="head_top_right">
+						<ul>
+							<li>
+								<input type="text" />
+							</li>
+							<li>
+								<img src="img/index/index_04.png" />
+							</li>
+							<li>
+								<div class="register">
+									<a href="register.html">注册</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</header>
+			
+			<div id="main">
+				<div style="height: 26px;"></div>
+				<div class="res_box">
+					<div class="box_top">
+						<div class="box_top_a"></div><span>注册极果</span>
+					</div>
+					<div class="res_main">
+						<ul>
+							<li>
+								<input type="text" placeholder="请输入手机号" id="moblie"/>
+							</li>
+							<li class="sdsf" style="margin-top: 0px;">
+								<ul>
+									<li><input type="text" placeholder="请输入图片验证码" id="img_yz"/></li>
+									<li><img src="img/register/res_03.png" style="margin-left: 40px;"/></li>
+								</ul>
+							</li>
+							<li class="sdsf" style="margin-top: 0px;">
+								<ul>
+									<li><input type="text" placeholder="请输入4位验证码" id="img_yz"/></li>
+									<li><button>点击获取验证码</button></li>
+								</ul>
+							</li>
+							<li>
+								<input type="text" placeholder="请输入用户名(四到八位)" id="name"/>
+							</li>
+							<li>
+								<input type="text" placeholder="请输入新密码" id="pwd"/>
+							</li>
+							<li>
+								<input type="text" placeholder="确定新密码" id="repwd"/>
+							</li>
+							<li>
+								<input type="button" value="立即注册" id="res"/>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+			<script type="text/javascript">
+				$(document).ready(function(){
+					$("#moblie").blur(function(){
+						var moble = $(this).val();
+						var reg=/^\d{11}$/;
+						if (!reg.test(moble)) 
+						{
+							alert("手机号填写错误！");
+							$(this).css("border","1px solid red");
+						} 
+						else
+						{
+							$(this).css("border","1px solid green");
+						}
+					});
+					
+					$("#name").blur(function(){
+						var name = $(this).val();
+						if(name.length < 4)
+						{
+							alert("用户名长度过短！");
+							$(this).css("border","1px solid red");
+						}
+						else if(name.length > 8)
+						{
+							alert("用户名长度过长！");
+							$(this).css("border","1px solid red");
+						}
+						else
+						{
+							$(this).css("border","1px solid green");
+						}
+					});
+						
+					$("#pwd").blur(function(){
+						var pwd = $(this).val();
+						if(pwd.length < 4 || pwd.length >10)
+						{
+							alert("密码长度不符合要求！");
+							$(this).css("border","1px solid red");
+						}
+						else
+						{
+							$(this).css("border","1px solid green");
+						}
+					});	
+					
+					$("#repwd").blur(function(){
+						var pwd = $("#pwd").val();
+						var repwd = $(this).val();
+						if(pwd == repwd)
+						{
+							$(this).css("border","1px solid green");
+						}
+						else
+						{
+							alert("两次密码输入不一致!")
+							$(this).css("border","1px solid red");
+						}
+					});
+					
+					
+					
+					$("#res").click(function(){
+						if($("#moblie").val() == "" && $("#name").val() == "")
+						{
+							alert("注册失败!");
+						}
+						else
+						{
+							alert("恭喜你注册成功，即将为你自动登陆!")
+						}
+					})
+				});
+			</script>
+			
+			<footer id="foot">
+				<div class="fot">
+					<ul>
+						<li>
+							<div class="erwe">
+								<img src="img/index/index_66.png" />
+							</div>
+						</li>
+						<li>
+							<div class="sec">
+								<img src="img/index/index_68.png" />
+								<p>全球酷玩试用导购平台酷·新奇·好玩·品质</p>
+								<p>微信添加“JguoJguo”获取我们的服务。</p>
+							</div>
+						</li>
+						<li>
+							<div class="thir">
+								<p>免费试用</p>
+								<table>
+									<tr>
+										<td>
+											<a href="#">试用流程</a>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<a href="#">如何提高成功率</a>
+										</td>
+									</tr>
+								</table>
+							</div>
+						</li>
+						<li>
+							<div class="for">
+								<p>友情链接</p>
+								<table>
+									<tr>
+										<td><a href="#">智东西</a></td>
+										<td><a href="#">WEIBUSI</a></td>
+									</tr>
+									<tr>
+										<td><a href="#">搜狐IT</a></td>
+										<td><a href="#">腾讯科技</a></td>
+									</tr>
+									<tr>
+										<td><a href="#">搜狐数码</a></td>
+										<td><a href="#">凤凰科技</a></td>
+									</tr>
+									<tr>
+										<td><a href="#">凤凰数码</a></td>
+										<td><a href="#">PConline</a></td>
+									</tr>
+									<tr>
+										<td><a href="#">泡泡网</a></td>
+										<td><a href="#">3W咖啡</a></td>
+									</tr>
+									<tr>
+										<td><a href="#">ZUK社区</a></td>
+										<td><a href="#">亿觅emie</a></td>
+									</tr>
+									<tr>
+										<td><a href="#">极客公园</a></td>
+										<td><a href="#">易迅易启玩</a></td>
+									</tr>
+									<tr>
+										<td><a href="#">果库</a></td>
+									</tr>
+								</table>
+							</div>
+						</li>
+						<li>
+							<div class="fiv">
+								<p>购买攻略</p>
+								<table>
+									<tr>
+										<td>
+											<a href="#">美亚海淘教程</a>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<a href="#">日亚海淘教程</a>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<a href="#">海淘转运攻略</a>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<a href="#">kickstarter 众筹购买攻略</a>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<a href="#">indiegogo 众筹购买攻略</a>
+										</td>
+									</tr>
+								</table>
+							</div>
+						</li>
+						<li>
+							<div class="six">
+								<p>厂商合作</p>
+								<table>
+									<tr>
+										<td>
+											<a href="#">关于极果</a>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<a href="#">联系我们</a>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<a href="#">商务合作：BD@jiguo.com</a>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<a href="#">CEO邮箱：CEO@jiguo.com</a>
+										</td>
+									</tr>
+								</table>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</footer>
+			
+		</div>
+	</body>
+</html>

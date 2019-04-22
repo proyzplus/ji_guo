@@ -1,0 +1,166 @@
+.cla_one{
+    font-size: 12px;
+}
+.cla_two{
+    border: 1px solid lightgray;
+    border-radius: 4px;
+}
+.cla_three{
+    font-size: 14px;
+}
+$col_one:#A49FA3;
+$col_two:#ffffff;
+#head{
+    border-bottom: 1px solid lightgray;
+}
+#morebx{
+    width: 100%;
+    height: 5000px;
+    background-color: #F7F7F7;
+}
+.morebx_top{
+    width: 1100px;
+    height: 50px;
+//  border: 1px solid red;
+    margin: auto;
+    line-height: 50px;
+    @extend .cla_one;
+    color: $col_one;
+}
+.mor_main{
+    width: 1100px;
+    height: 4920px;
+    margin: auto;
+}
+.mor_main ul{
+    display: flex;
+    justify-content: space-around;
+}
+.gu_ma_left{
+    width: 702px;
+    height: 4920px;
+    @extend .cla_two;
+    background-color: $col_two;
+}
+.gu_ma_right{
+    width: 276px;
+    height: 110px;
+    @extend .cla_two;
+    background-color: $col_two;
+}
+.right_magu{
+    width: 138px;
+    height: 110px;
+    border-right: 1px solid $col_one;
+    text-align: center;
+    float: left;
+    @extend .cla_one;
+    color: $col_one;
+}
+.right_magua{
+    width: 136px;
+    height: 110px;
+    text-align: center;
+    @extend .cla_one;
+    color: $col_one;
+    float: right;
+}
+.guma_top{
+    width: 661px;
+    height: 100px;
+    margin: auto;
+//  border: 1px solid red;
+    line-height: 60px;
+}.guma_top ul{
+//  border: 1px solid red;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    line-height: 40px;
+    @extend .cla_one;
+    color: $col_one;
+}
+.top_fir{
+    width: 675px;
+    height: 65px;
+//  border: 1px solid red;
+    margin: auto;
+    @extend .cla_three;
+    line-height: 30px;
+}
+.top_sec{
+    text-align: center;
+}
+.top_thir{
+    width: 640px;
+    height: 1061px;
+//  border: 1px solid red;
+    margin: auto;
+    @extend .cla_three;
+    line-height: 22px;
+}
+.thir_tops{
+    text-align: center;
+    font-weight: 600;
+    line-height: 30px;
+    font-size: 16px;
+}
+.top_thir img{
+    margin-top: 22px;
+}
+#span_di{
+    margin-top: 20px;
+}
+.top_for{
+    width: 640px;
+    height: 1720px;
+    margin: auto;
+//  border: 1px solid red;
+    @extend .cla_three;
+    line-height: 22px;
+}
+.top_for img{
+    margin-top: 16px;
+}
+.top_fiv{
+    width: 640px;
+    height: 1455px;
+    margin: auto;
+//  border: 1px solid red;
+    @extend .cla_three;
+    line-height: 22px;
+}
+.top_fiv img{
+    margin-top: 16px;
+}
+.top_last{
+    width: 640px;
+    height: 100px;
+//  border: 1px solid red;
+    margin: auto;
+    line-height: 40px;
+}
+.top_last a{
+    font-size: 14px;
+    color: $col_one;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
